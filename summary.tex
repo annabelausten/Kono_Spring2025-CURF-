@@ -1,0 +1,415 @@
+% \documentclass[12pt]{article}
+\documentclass[12pt]{assets/fieldnotes}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+
+\usepackage{fontspec}
+    \setmainfont{Charis SIL}
+
+\usepackage{enumerate}
+\usepackage{textcomp}
+\usepackage{tipa, vowel}
+\usepackage{amssymb}
+\usepackage{booktabs}
+
+
+\usepackage[dvipsnames]{xcolor}
+\usepackage{leipzig}
+
+\newcommand{\lp}[1]{\textcolor{blue}{#1}}
+\newcommand{\g}[1]{\textcolor{JungleGreen}{#1}}
+\newcommand{\jal}[1]{\textcolor{Fuchsia}{#1}}
+\newcommand{\jk}[1]{\textcolor{red}{#1}}
+\newcommand{\csy}[1]{\textcolor{PineGreen}{#1}}
+\newcommand{\gm}[1]{\textcolor{brown}{#1}}
+\newcommand{\ah}[1]{\textcolor{red!65!black}{#1}}
+\newcommand{\x}[1]{\textcolor{black!35!white}{#1}}
+\newcommand{\mb}[1]{\textcolor{Dandelion}{#1}}
+\newcommand{\jmt}[1]{\textcolor{Gray}{#1}}
+
+\newcommand{\ts}{\textsc}
+
+% For subscripts and superscripts 
+\newcommand{\spspt}[1]{\ensuremath{^{\textrm{\scriptsize#1}}}}
+\newcommand{\sbspt}[1]{\ensuremath{_{\textrm{\scriptsize#1}}}}
+
+\usepackage{setspace}
+\usepackage{hyperref}
+\setcounter{tocdepth}{1}
+
+\usepackage{linguex}
+\usepackage{typgloss}
+
+\title{Kono (Sierra Leone) Summary}
+\author{LING3020/5020}
+\date{University of Pennsylvania, Spring 2025}
+
+\setcounter{secnumdepth}{4} %enable \paragraph -- for subsubsubsections
+
+\begin{document}
+
+\maketitle
+
+\section{Phoneme Inventory}
+
+\subsection{Vowels}
+\begin{center}
+{\Large
+\begin{vowel}
+ \putcvowel[l]{i}{1}
+ \putcvowel[l]{e}{2}
+ \putcvowel[l]{ɛ}{3}
+ \putcvowel[l]{a}{4}
+ \putcvowel[r]{ɔ}{6}
+ \putcvowel[r]{o}{7}
+ \putcvowel[r]{u}{8}
+\end{vowel}
+}
+\end{center}
+
+Vowels differ in length and tones
+
+\begin{table}[htb!]
+    \centering
+    \begin{tabular}{c|c}
+        tʃé & call \\
+        tʃɛ̀ & this \\
+        tʃɛ́ & pour \\
+        tʃii & egg \\
+        tʃéè & whopping cough \\
+        tʃɛ́ɛ̀ & war \\
+        tʃɛ́ɛ́ & husband \\
+    \end{tabular}
+    \caption{Minimal pairs for front vowels}
+    \label{tab:my_label}
+\end{table}
+
+\begin{table}[]
+    \centering
+    \begin{tabular}{c|c}
+        tá & go \\
+        tâ & fire \\
+        tàà & crawl \\
+        tàâ & calabash \\
+    \end{tabular}
+    \caption{Minimal pairs for a}
+    \label{tab:my_label}
+\end{table}
+    
+\newpage 
+\section{Pronouns/Agreement}
+
+NOTE: don't correct the tones/vowels on any data yet; this is just for glossing
+
+\begin{table}[htb!]
+    \centering
+    \begin{tabular}{ccccc}
+        \toprule
+        & Singular & \multicolumn{3}{c}{Plural} \\
+        \toprule 
+        & & 1, 2 & 1, 2, 3 & 1, 3 \\  
+        \cmidrule(r){3-3}
+        \cmidrule(r){4-4} 
+        \cmidrule(r){5-5}
+        1 & Ń & mɔ̀ & mɔ́ & Ǹ \\
+        & 1SG & 1INCL.DU & 1INCL & 1EXCL\\
+        \midrule
+        2 & í & \multicolumn{3}{c}{wó} \\
+         & 2SG & \multicolumn{3}{c}{2PL} \\
+        \midrule
+        3 & à & \multicolumn{3}{c}{\`{\~{a}} / \`{a}-N}\\
+          & 3SG & \multicolumn{3}{c}{3PL / 3-PL} \\
+        \bottomrule
+    \end{tabular}
+    \caption{just the pronouns}
+    \label{tab:fut}
+\end{table}
+
+\begin{table}[htb!]
+    \centering
+    \begin{tabular}{ccccc}
+        \toprule
+        & Singular & \multicolumn{3}{c}{Plural} \\
+        \toprule 
+        & & 1, 2 & 1, 2, 3 & 1, 3 \\  
+        \cmidrule(r){3-3}
+        \cmidrule(r){4-4} 
+        \cmidrule(r){5-5}
+        1 & n-á & mɔ̀-á & mɔ́-á & ná-à \\
+        & 1SG.PST & 1INCL.DU-PST & 1INCL-PST & 1EXCL-PST\\
+        \midrule
+        2 & j-á & \multicolumn{3}{c}{w-á} \\
+          & 2SG-PST & \multicolumn{3}{c}{2PL-PST} \\
+        \midrule
+        3 & à & \multicolumn{3}{c}{à-n-á}\\
+        & 3SG.PST / PST & \multicolumn{3}{c}{3-PL-PST} \\
+        \bottomrule
+    \end{tabular}
+    \caption{pronouns with past auxiliary}
+    \label{tab:fut}
+\end{table}
+\begin{table}[htb!]
+    \centering
+    \begin{tabular}{ccccc}
+        \toprule
+        & Singular & \multicolumn{3}{c}{Plural} \\
+        \toprule 
+        & & 1, 2 & 1, 2, 3 & 1, 3 \\  
+        \cmidrule(r){3-3}
+        \cmidrule(r){4-4} 
+        \cmidrule(r){5-5}
+        1 & n-á & mɔ̀-á & mɔ́-á & ná-à \\
+        & 1SG-POSS & 1INCL.DU-POSS & 1INCL-POSS & 1EXCL-POSS\\
+        \midrule
+        2 & j-á & \multicolumn{3}{c}{w-á} \\
+          & 2SG-POSS & \multicolumn{3}{c}{2PL-POSS} \\
+        \midrule
+        3 & à & \multicolumn{3}{c}{à-n-á}\\
+        & 3SG.POSS & \multicolumn{3}{c}{3-PL-POSS} \\
+        \bottomrule
+    \end{tabular}
+    \caption{Alienable possession}
+    \label{tab:fut}
+\end{table}
+
+\begin{table}[htb!]
+    \centering
+    \begin{tabular}{ccccc}
+        \toprule
+        & Singular & \multicolumn{3}{c}{Plural} \\
+        \toprule 
+        & & 1, 2 & 1, 2, 3 & 1, 3 \\  
+        \cmidrule(r){3-3}
+        \cmidrule(r){4-4} 
+        \cmidrule(r){5-5}
+        1 & ḿ-bé & mw-ɛ̃̀ & mw-ɛ̃̂ & m-bè \\
+        & 1SG-NPST & 1INCL.DU-NPST & 1INCL-NPST & 1EXCL-NPST\\
+        \midrule
+        2 & é & \multicolumn{3}{c}{w-é} \\
+        & 2SG.NPST & \multicolumn{3}{c}{2PL-NPST} \\
+        \midrule
+        3 & ɛ̀ & \multicolumn{3}{c}{à-m-bè}\\
+         & 3SG.NPST & \multicolumn{3}{c}{3-PL-NPST} \\
+        \bottomrule
+    \end{tabular}
+    \caption{Pronouns with nonpast auxiliary \jal{Jianjing - what's the vowel for 3sg with DP subject? You were going to check these, I think the 1incl should have a vowel instead of the w?}}
+    \label{tab:fut}
+\end{table}
+
+\begin{table}[htb!]
+    \centering
+    \begin{tabular}{ccccc}
+        \toprule
+        & Singular & \multicolumn{3}{c}{Plural} \\
+        \toprule 
+        & & 1, 2 & 1, 2, 3 & 1, 3 \\  
+        \cmidrule(r){3-3}
+        \cmidrule(r){4-4} 
+        \cmidrule(r){5-5}
+        1 & Ń-dó & mɔ́ & mɔ̀ & Ǹ-dó \\
+        & 1SG-OBJ & 1INCL.DU.OBJ & 1INCL.OBJ & 1EXCL-OBJ\\
+        \midrule
+        2 & j-ɔ́ & \multicolumn{3}{c}{wó} \\
+         & 2SG-OBJ & \multicolumn{3}{c}{2PL.OBJ} \\
+        \midrule
+        3 & ɔ́ & \multicolumn{3}{c}{à-n-dò}\\
+        & 3SG.OBJ / OBJ & \multicolumn{3}{c}{3-PL-OBJ} \\
+        \bottomrule
+    \end{tabular}
+    \caption{Pronouns plus object markers, not involving the subject}
+    \label{tab:fut}
+\end{table} 
+
+\begin{table}[htb!]
+\centering
+    \begin{tabular}{cc}
+    \toprule
+    a & ɔ \\
+    OBJ & OBJ\\
+     \bottomrule
+    \end{tabular}
+    \caption{object markers without pronouns}
+\end{table} 
+
+\begin{table}[htb!]
+    \centering
+    \begin{tabular}{ccccc}
+        \toprule
+        & Singular & \multicolumn{3}{c}{Plural} \\
+        \toprule 
+        & & 1, 2 & 1, 2, 3 & 1, 3 \\  
+        \cmidrule(r){3-3}
+        \cmidrule(r){4-4} 
+        \cmidrule(r){5-5}
+        1 & ń-dó & m-ɔ́ & m-ɔ̀ & \`{n}-dó \\
+        & 1SG-PST.3SG.OBJ & 1INCL.DU-PST.3SG.OBJ & 1INCL-PST.3SG.OBJ & 1EXCL-PST.3SG.OBJ\\
+        \midrule
+        2 & j-ɔ́ & \multicolumn{3}{c}{w-ó} \\
+         & 2SG-PST.3SG.OBJ & \multicolumn{3}{c}{2PL-PST.3SG.OBJ} \\
+        \midrule
+        3 & ɔ́ & \multicolumn{3}{c}{à-n-dò}\\
+        & 3SG.PST.3SG.OBJ /  & \multicolumn{3}{c}{3-PL-PST.3SG.OBJ} \\
+        & PST.3SG.OBJ \\
+        \bottomrule
+    \end{tabular}
+    \caption{subject pronouns plus past auxiliary plus 3sg object plus object marker, Jianjing some of these have long vowels?}
+    \label{tab:fut}
+\end{table} 
+
+
+\end{document}
+
+\begin{table}[htb!]
+    \centering
+    \begin{tabular}{ccccc}
+        \toprule
+        & Singular & \multicolumn{3}{c}{Plural} \\
+        \toprule 
+        & & 1, 2 & 1, 2, 3 & 1, 3 \\  
+        \cmidrule(r){3-3}
+        \cmidrule(r){4-4} 
+        \cmidrule(r){5-5}
+        1 & Ń & mɔ́ & mɔ̀ & Ǹ \\
+        \midrule
+        2 & í & \multicolumn{3}{c}{wó} \\
+        \midrule
+        3 & à & \multicolumn{3}{c}{àŋ}\\
+        \bottomrule
+    \end{tabular}
+    \caption{Object pronouns}
+    
+    \label{tab:fut}
+\end{table}
+\begin{table}[htb!]
+    \centering
+    \begin{tabular}{ccccc}
+        \toprule
+        & Singular & \multicolumn{3}{c}{Plural} \\
+        \toprule 
+        & & 1, 2 & 1, 2, 3 & 1, 3 \\  
+        \cmidrule(r){3-3}
+        \cmidrule(r){4-4} 
+        \cmidrule(r){5-5}
+        1 & Ń & Ǹ + length & mɔ́ & Ǹ \\
+        \midrule
+        2 & í & \multicolumn{3}{c}{wó} \\
+        \midrule
+        3 & à & \multicolumn{3}{c}{àŋ}\\
+        \bottomrule
+    \end{tabular}
+    \caption{Past tense and adjectival predicates}
+    \label{tab:fut}
+\end{table}
+
+\begin{table}[htb!]
+    \centering
+    \begin{tabular}{ccccc}
+        \toprule
+        & Singular & \multicolumn{3}{c}{Plural} \\
+        \toprule 
+        & & 1, 2 & 1, 2, 3 & 1, 3 \\  
+        \cmidrule(r){3-3}
+        \cmidrule(r){4-4} 
+        \cmidrule(r){5-5}
+        1 & Ń & mɔ̀ & mɔ́ & Ǹ \\
+        \midrule
+        2 & í & \multicolumn{3}{c}{wó} \\
+        \midrule
+        3 & à & \multicolumn{3}{c}{àŋ}\\
+        \bottomrule
+    \end{tabular}
+    \caption{inalienable possession}
+    \label{tab:fut}
+\end{table}
+
+\begin{table}[htb!]
+    \centering
+    \begin{tabular}{ccccc}
+        \toprule
+        & Singular & \multicolumn{3}{c}{Plural} \\
+        \toprule 
+        & & 1, 2 & 1, 2, 3 & 1, 3 \\  
+        \cmidrule(r){3-3}
+        \cmidrule(r){4-4} 
+        \cmidrule(r){5-5}
+        1 & ná & mɔ̀á & mɔ́á & náà \\
+        \midrule
+        2 & já & \multicolumn{3}{c}{wá} \\
+        \midrule
+        3 & à & \multicolumn{3}{c}{àná}\\
+        \bottomrule
+    \end{tabular}
+    \caption{Alienable possession}
+    \label{tab:fut}
+\end{table}
+
+\begin{table}[htb!]
+    \centering
+    \begin{tabular}{ccccc}
+        \toprule
+        & Singular & \multicolumn{3}{c}{Plural} \\
+        \toprule 
+        & & 1, 2 & 1, 2, 3 & 1, 3 \\  
+        \cmidrule(r){3-3}
+        \cmidrule(r){4-4} 
+        \cmidrule(r){5-5}
+        1 & ḿbé & mwɛ̃̀ & mwɛ̃̂ & mbè \\
+        \midrule
+        2 & é & \multicolumn{3}{c}{wé} \\
+        \midrule
+        3 & ɛ̀ & \multicolumn{3}{c}{àmbè}\\
+        \bottomrule
+    \end{tabular}
+    \caption{Nonpast}
+    \label{tab:fut}
+\end{table}
+
+\newpage 
+\subsection{Object pronouns}
+
+\begin{table}[htb!]
+    \centering
+    \begin{tabular}{ccccc}
+        \toprule
+        & Singular & \multicolumn{3}{c}{Plural} \\
+        \toprule 
+        & & 1, 2 & 1, 2, 3 & 1, 3 \\  
+        \cmidrule(r){3-3}
+        \cmidrule(r){4-4} 
+        \cmidrule(r){5-5}
+        1 & Ń & mɔ́ & mɔ̀ & Ǹ \\
+        \midrule
+        2 & í & \multicolumn{3}{c}{wó} \\
+        \midrule
+        3 & à & \multicolumn{3}{c}{àŋ}\\
+        \bottomrule
+    \end{tabular}
+    \caption{Object pronouns}
+    
+    \label{tab:fut}
+\end{table}
+
+\begin{table}[htb!]
+    \centering
+    \begin{tabular}{ccccc}
+        \toprule
+        & Singular & \multicolumn{3}{c}{Plural} \\
+        \toprule 
+        & & 1, 2 & 1, 2, 3 & 1, 3 \\  
+        \cmidrule(r){3-3}
+        \cmidrule(r){4-4} 
+        \cmidrule(r){5-5}
+        1 & Ńdó & mɔ́ & mɔ̀ & Ǹdó \\
+        \midrule
+        2 & jɔ́ & \multicolumn{3}{c}{wó} \\
+        \midrule
+        3 & ɔ́ & \multicolumn{3}{c}{àndò}\\
+        \bottomrule
+    \end{tabular}
+    \caption{Object pronouns: lexical}
+    \label{tab:fut}
+\end{table} 
+
+
+
+\end{document}

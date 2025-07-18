@@ -1,0 +1,36 @@
+name: Convert LaTeX to JSON and Push to Website
+
+on:
+  push:
+    paths:
+      - '**.tex'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout LaTeX repo
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Run parser
+      run: python parse_kono_tex.py
+
+    - name: Push data.json to website repo
+      uses: cpina/github-action-push-to-another-repository@main
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.PUSH_TOKEN }}
+      with:
+        source-directory: .
+        destination-github-username: annabelausten
+        destination-repository-name: kono-audio-explorer
+        target-branch: main
+        user-email: actions@github.com
+        commit-message: "🔁 Auto-update data.json from LaTeX"
+        files: data.json
+        destination-directory: public/data  # or src/ or static/ — match your frontend folder!
